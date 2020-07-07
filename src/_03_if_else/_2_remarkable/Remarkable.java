@@ -7,12 +7,27 @@ import javax.swing.JOptionPane;
 public class Remarkable {
 public static void main(String[] args) {
 
-		// 1. Save something remarkable about each person in a variable.
-
+		String Bob = "I'm tall!";
+		String Fred = "I'm small!";
+		String Other = "I'm medium!";
+		
+		String input = JOptionPane.showInputDialog("Who do you want to learn more about?");
+		
+		if (input.equals("Bob")) {
+			JOptionPane.showMessageDialog(null , Bob);
+		}
+		else if (input.equals("Fred")) {
+			JOptionPane.showMessageDialog(null, Fred);
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, Other);
 		// 2. Ask the user to enter a name. Store their answer in a variable.
 
 		// 3. In a pop-up, tell the user what is remarkable about that person. 
 
-	}
+	
+		}
+}
 }
 
